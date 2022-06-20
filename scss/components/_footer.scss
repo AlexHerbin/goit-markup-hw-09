@@ -1,0 +1,83 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: #2f303a;
+
+    &-container {
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
+            }
+        
+
+        @media screen and (min-width: 1200px) {
+                display: flex;
+                align-items: baseline;
+            }      
+        }
+}
+
+.logo-text {
+    color: #fff;
+}
+
+.adr {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: #fff;
+}
+
+.mail:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+}
+
+.footer-auth .link {
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    transition: color 250ms var(--taiming-function);
+}
+
+.footer-auth .link:focus,
+.footer-auth .link:hover {
+    color: var(--accent-color);
+}
+
+.logo-section {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        margin-right: 165px;
+        margin-left: 60px;
+    }
+    
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }  
+}

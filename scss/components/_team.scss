@@ -1,0 +1,115 @@
+.team {
+    background-color: #f5f4fa;
+}
+
+.team-list {
+    
+    
+ 
+    &__item {
+         text-align: center;
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        border-radius: 0 0 4px 4px;
+        overflow: hidden;
+    }
+    
+    @media screen and (max-width: 767px) {
+        &__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: -15px;
+
+        &__item {
+            flex-basis: calc((100% - 60px) / 2);
+
+            margin: 15px;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+
+        &__item {
+            flex-basis: calc((100% - 90px) / 4);
+        }
+
+    }
+    
+    
+    
+}
+
+.card-content {
+    padding: 30px 0;
+    
+    background-color: var(--background-primary-color);
+    
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+
+        color: var(--title-text-color);
+    }
+
+    &__text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.19;
+    }
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background-primary-color);
+
+    &__item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+
+        transition: background-color 250ms var(--taiming-function);
+    }
+    
+    &__icon {
+        fill: #afb1b8;
+
+        transition: fill 250ms var(--taiming-function);
+    }
+
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+        fill: #ffffff;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--accent-color);
+    }
+}
+
