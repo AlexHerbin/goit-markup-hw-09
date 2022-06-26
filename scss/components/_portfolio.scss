@@ -23,10 +23,18 @@
 
     & .item {
         @media screen and (max-width: 1199px) {
-            margin-bottom: 15px;
             margin-right: 8px;
         }
     } 
+
+        
+
+    & .item:nth-child(-n + 3) {
+        
+        @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+            }
+    }
 }
 
 
